@@ -1,0 +1,31 @@
+.categoryContainer {
+  overflow: visible !important;
+}
+.category_list {
+  display: flex;
+  gap: 1em;
+  overflow-x: scroll;
+}
+.category_list::-webkit-scrollbar
+{
+  display: none;
+}
+
+
+.list_item_container,
+.movie_title_box {
+  color: #ffffff;
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  background: black;
+}
+/* .movie_title_box {
+  d
+} */
+
+/* .list_item_poster_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+} */

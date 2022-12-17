@@ -1,0 +1,21 @@
+.main_hero {
+  background: cover;
+  background-image: url("../../background_image.png");
+  height: 60vh;
+}
+
+h1.main_hero_heading {
+  padding-top: 109px;
+  font-family: DM Sans;
+  font-weight: 700;
+  letter-spacing: -0.05em;
+  text-align: left;
+  padding-bottom: 159px;
+
+}
+
+@media screen and (max-width: 844px) {
+  h1.main_hero_heading {
+    text-align: center;
+  }
+}

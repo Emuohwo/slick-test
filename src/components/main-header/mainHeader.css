@@ -1,0 +1,26 @@
+.main_header {
+  background: #292929;
+}
+
+.main_header_title {
+  /* position: absolute; */
+/* width: 156.7px; */
+/* height: 32.94px; */
+/* left: 96px; */
+display: inline;
+border: 1px solid #fff;
+padding: 3px;
+
+  color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 844px) {
+  .main_header_title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+}
