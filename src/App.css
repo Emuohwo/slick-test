@@ -8,3 +8,9 @@ label {
 
 color: #000000;
 }
+
+input {
+  height: 24px;
+  width: 100%;
+  padding: 1em;
+}

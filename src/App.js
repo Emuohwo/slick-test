@@ -101,16 +101,16 @@ const DATA = [
 
 
   const BASE_URL = 'http://www.omdbapi.com/?apikey=7f1b1a54&'
-  
+
 function App() {
-  const [movie, setMovie] = useState(DATA);
+  const [movie, setMovie] = useState([]);
   const [episode, setEpisode] = useState([]);
   const [searchText, setSearchText] = useState('');
 
   useEffect(() => {
     const getMovies = async () => {
       try {
-        const { data } = await axios.get(`${BASE_URL}s=movie&t=${searchText}`);
+        const { data } = await axios.get(`${BASE_URL}s=movie&y=${searchText}`);
         console.log('first', data.Search)
         setMovie(data.Search);
       } catch(e) {
@@ -123,7 +123,7 @@ function App() {
   useEffect(() => {
     const getEpisodes = async () => {
       try {
-        const { data } = await axios.get(`${BASE_URL}s=episode&t=${searchText}`);
+        const { data } = await axios.get(`${BASE_URL}s=episode&y=${searchText}`);
         console.log('second', data.Search)
         setEpisode(data.Search);
       } catch(e) {
@@ -144,7 +144,8 @@ function App() {
         <input
           type="text"
           id='search'
-          className='form-control'
+          className=''
+          placeholder='Search by year e.g 2004'
           onChange={(e) => setSearchText(e.target.value)}
         />
       </div>

@@ -15,9 +15,10 @@ h1.main_hero_heading {
 
 }
 
-@media screen and (max-width: 844px) {
+@media screen and (max-width: 767px) {
   h1.main_hero_heading {
     text-align: center;
+    margin: 0 auto;
   }
 }
 
@@ -30,7 +31,7 @@ h1.main_hero_heading {
   }
   h1.main_hero_heading {
     width: 203px;
-    font-size: 20px;
+    margin: 0 auto;
   }
 
 }

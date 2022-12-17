@@ -4,7 +4,7 @@
 
 .main_header_title {
   display: inline;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   padding: 4px;
 
   color: #FFFFFF;
@@ -13,6 +13,7 @@
 
 @media screen and (max-width: 844px) {
   .main_header {
+    font-size: 14px;
     text-align: center;
   }
   .main_header_title {
