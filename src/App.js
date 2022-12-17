@@ -101,9 +101,9 @@ const DATA = [
 
 
   const BASE_URL = 'http://www.omdbapi.com/?apikey=7f1b1a54&'
-
+  
 function App() {
-  const [movie, setMovie] = useState([]);
+  const [movie, setMovie] = useState(DATA);
   const [episode, setEpisode] = useState([]);
   const [searchText, setSearchText] = useState('');
 

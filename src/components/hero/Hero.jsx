@@ -7,7 +7,7 @@ function Hero() {
     <section className='main_hero'>
       <div className="container">
         <h1 className=' main_hero_heading text-white'>
-          Watch <br /> something <br /> incredible.
+          Watch  something  incredible.
         </h1>
       </div>
     </section>

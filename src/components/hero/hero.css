@@ -1,5 +1,5 @@
 .main_hero {
-  background: cover;
+  background: cover no-repeat;
   background-image: url("../../background_image.png");
   height: 60vh;
 }
@@ -11,6 +11,7 @@ h1.main_hero_heading {
   letter-spacing: -0.05em;
   text-align: left;
   padding-bottom: 159px;
+  width: 300px;
 
 }
 
@@ -18,4 +19,18 @@ h1.main_hero_heading {
   h1.main_hero_heading {
     text-align: center;
   }
+}
+
+
+@media screen and (max-width: 454px) {
+  .main_hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+  }
+  h1.main_hero_heading {
+    width: 203px;
+    font-size: 20px;
+  }
+
 }
